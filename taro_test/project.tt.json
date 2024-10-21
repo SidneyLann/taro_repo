@@ -1,0 +1,9 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "i_bizz_client",
+  "appid": "touristappid",
+  "setting": {
+    "es6": false,
+    "minified": false
+  }
+}
