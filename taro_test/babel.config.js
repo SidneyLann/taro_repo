@@ -7,8 +7,8 @@ module.exports = {
     }],
 	//'module:metro-react-native-babel-preset',
 	//'module:@react-native/babel-preset',
-	'@wyw-in-js/babel-preset',
-	//'@wyw-in-js',
+	//'@wyw-in-js/babel-preset',
+	'@wyw-in-js',
 	//'@linaria'
   ],
   plugins: [
