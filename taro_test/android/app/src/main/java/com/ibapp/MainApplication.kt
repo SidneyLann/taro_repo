@@ -1,4 +1,4 @@
-package com.i_bizz_client
+package com.ibapp
 import android.content.res.Configuration
 import expo.modules.ApplicationLifecycleDispatcher
 import expo.modules.ReactNativeHostWrapper
@@ -34,7 +34,8 @@ class MainApplication : Application(), ReactApplication {
       })
 
   override val reactHost: ReactHost
-    get() = getDefaultReactHost(this.applicationContext, reactNativeHost)
+    //get() = getDefaultReactHost(this.applicationContext, reactNativeHost)
+    get() = ReactNativeHostWrapper.createReactHost(applicationContext, reactNativeHost)
 
   override fun onCreate() {
     super.onCreate()

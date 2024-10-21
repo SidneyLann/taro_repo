@@ -1,4 +1,4 @@
-package com.i_bizz_client
+package com.ibapp
 import expo.modules.ReactActivityDelegateWrapper
 
 import com.facebook.react.ReactActivity
