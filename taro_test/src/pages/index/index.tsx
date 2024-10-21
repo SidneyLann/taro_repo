@@ -1,6 +1,6 @@
 import { Component, PropsWithChildren } from 'react'
 import { View, Text } from '@tarojs/components'
-import styled from '../../../.linaria/custom';
+import {styled} from '../../../.linaria/custom';
 
 import './index.scss'
 
