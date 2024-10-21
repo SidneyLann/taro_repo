@@ -27,4 +27,5 @@ allprojects {
         }
     }
 }
+
 apply plugin: "com.facebook.react.rootproject"

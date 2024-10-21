@@ -21,6 +21,8 @@
 @rem
 @rem ##########################################################################
 
+set JAVA_HOME=d:/DEV/jdk17
+
 @rem Set local scope for the variables with windows NT shell
 if "%OS%"=="Windows_NT" setlocal
 

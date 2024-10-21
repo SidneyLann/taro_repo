@@ -1,9 +1,16 @@
 import { Component, PropsWithChildren } from 'react'
 import { View, Text } from '@tarojs/components'
+import { styled } from '../../../.linaria/custom';
 
 import './index.scss'
 
-export default class Index extends Component<PropsWithChildren> {
+const Text0 = styled(Text)<{ height: string}>`
+display: flex;
+flex-direction: row;
+height: ${props => props.height};
+`
+
+class Index extends Component<PropsWithChildren> {
 
   componentDidMount () { }
 
@@ -16,8 +23,10 @@ export default class Index extends Component<PropsWithChildren> {
   render () {
     return (
       <View className='index'>
-        <Text>Hello world!</Text>
+        <Text0 height={30}>Hello world!</Text0>
       </View>
     )
   }
 }
+
+export default Index
