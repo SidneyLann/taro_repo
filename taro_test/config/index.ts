@@ -105,6 +105,7 @@ export default defineConfig<'webpack5'>(async (merge, { command, mode }) => {
     },
     alias: {
 	    'tsx': path.resolve(__dirname, '..', 'src'),
+	    'jcss': path.resolve(__dirname, '..', 'css'),
 	    'img': path.resolve(__dirname, "..", "src/static/images"),
 	    'css': path.resolve(__dirname, "..", "src/static/css"),
 	    'pkgcomm': path.resolve(__dirname, '..', 'src/pkgcommodity/page'),

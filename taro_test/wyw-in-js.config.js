@@ -9,19 +9,29 @@ module.exports = {
     action: shaker,
   },
   {
-    test: /node_modules[\/\\](?!@tarojs)/,
+    test: /[\\/]node_modules[\\/](?!@tarojs)/,
     action: 'ignore',
+  },
+  {
+    test: (filename, code) => {
+      if (!/[\\/]node_modules[\\/]/.test(filename)) {
+        return false;
+      }
+ 
+      return /(?:^|\*\/|;|})\s*(?:export|import)[\s{]/m.test(code);
+    },
+    action: shaker,
   },
   ],
   tagResolver: (source, tag) => {
-    const pathToLocalFile = path.resolve(__dirname, '.', '.linaria/custom.js');
-    if (source === '../../.linaria/custom') {
+    const pathToLocalFile = 'jcss/custom';
+    if (source === pathToLocalFile) {
       if (tag === 'css') {
         return require.resolve('@linaria/core/processors/css');
       }
  
       if (tag === 'styled') {
-	    console.log(source+' fuck '+tag)
+	    console.log(source+' wyw '+tag)
         return require.resolve('@linaria/react/processors/styled');
       }
     }
