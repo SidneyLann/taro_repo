@@ -1,4 +1,3 @@
-
 import { Component, PropsWithChildren } from 'react'
 import { View, Text } from '@tarojs/components'
 import { styled } from 'jcss/custom';
