@@ -83,7 +83,7 @@ export default defineConfig<'webpack5'>(async (merge, { command, mode }) => {
       }
     },
     rn: {
-      appName: 'i_bizz_client',
+      appName: 'ibapp',
       entry: 'app',
       output: {
         ios: './ios/main.jsbundle',
