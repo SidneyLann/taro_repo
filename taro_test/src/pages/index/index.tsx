@@ -8,7 +8,7 @@ const View0 = styled(View) <{ height: string }>`
 display: flex;
 flex-direction: row;
 height: ${props => props.height}px;
-background-color: white;
+background-color: blue;
 `
 
 const Text0 = styled(Text) <{ height2: string }>`
@@ -37,7 +37,7 @@ class Index extends Component<PropsWithChildren> {
 
 	render() {
 		return (
-			<View0 height={800}>
+			<View0 style={{height: 800}}>
 				<Text0 height2={400} >Hello world!</Text0>
 			</View0>
 		)
